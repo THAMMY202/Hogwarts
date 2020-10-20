@@ -3,23 +3,23 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
+    app:startDestination="@+id/nav_house">
 
     <fragment
-        android:id="@+id/nav_home"
-        android:name="com.school.hogwarts.ui.home.HomeFragment"
-        android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home" />
+        android:id="@+id/nav_house"
+        android:name="com.school.hogwarts.ui.fragments.HouseFragment"
+        android:label="@string/menu_house"
+        tools:layout="@layout/fragment_house" />
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.school.hogwarts.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        android:id="@+id/nav_spell"
+        android:name="com.school.hogwarts.ui.fragments.SpellFragment"
+        android:label="@string/menu_spell"
+        tools:layout="@layout/fragment_spell" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.school.hogwarts.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/nav_student"
+        android:name="com.school.hogwarts.ui.fragments.StudentFragment"
+        android:label="@string/menu_student"
+        tools:layout="@layout/fragment_student" />
 </navigation>
