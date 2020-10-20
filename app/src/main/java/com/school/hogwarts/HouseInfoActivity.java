@@ -74,22 +74,8 @@ public class HouseInfoActivity extends AppCompatActivity {
         listViewColors.setAdapter(adapter);
 
 
-        tvMascot.setText(Config.TAG_MASCOT);
-        tvHeadOfhouse.setText(Config.TAG_HEAD_OF_HOUSE);
-        tvHouseGhost.setText(Config.TAG_HOUSE_GHOST);
-        tvFounder.setText(Config.TAG_FOUNDER);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                /*listViewMembers.setVisibility(View.VISIBLE);
-                Animation upAnim = AnimationUtils.loadAnimation(HouseInfoActivity.this, R.anim.translate);
-                upAnim.reset();
-                listViewMembers.clearAnimation();
-                listViewMembers.setAnimation(upAnim);*/
-            }
-        });
+
     }
 
     private void intiViews(){
@@ -104,5 +90,10 @@ public class HouseInfoActivity extends AppCompatActivity {
 
         arrayList = new ArrayList<>();
         arrayListMembers = new ArrayList<>();
+
+        tvMascot.setText(Config.TAG_MASCOT);
+        tvHeadOfhouse.setText(Config.TAG_HEAD_OF_HOUSE);
+        tvHouseGhost.setText(Config.TAG_HOUSE_GHOST);
+        tvFounder.setText(Config.TAG_FOUNDER);
     }
 }
