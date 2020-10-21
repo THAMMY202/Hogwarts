@@ -3,7 +3,9 @@ package com.school.hogwarts;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.widget.TextView;
 
 import com.google.android.material.appbar.CollapsingToolbarLayout;
@@ -62,5 +64,19 @@ public class StudentInfoActivity extends AppCompatActivity {
         tvDeathEater.setText(Config.TAG_DEATH_EATER);
         tvBloodStatus.setText(Config.TAG_BLOOD_STATUS);
         tvSpecies.setText(Config.TAG_SPECIES);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                Intent intent = new Intent(StudentInfoActivity.this, MainActivity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
+                startActivity(intent);
+                return true;
+
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 }
